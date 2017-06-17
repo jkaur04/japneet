@@ -3,12 +3,24 @@
   "version": "0.0.0",
   "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
   "main": "server.js",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkaur04/japneet.git"
+  },
   "author": "",
   "dependencies": {
     "async": "~0.2.8",
     "express": "~3.2.4",
-    "mongodb": "^2.2.27",
-    
-  }
+    "mongodb": "^2.2.28",
+    "mongoose": "^4.10.6"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkaur04/japneet/issues"
+  },
+  "homepage": "https://github.com/jkaur04/japneet#readme"
 }
