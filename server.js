@@ -21,8 +21,7 @@ var Post = require('./models/Post.js');
 //  * `port` - The HTTP port to listen on. If `process.env.PORT` is set, _it overrides this value_.
 //
 var router = express();
-var server = http.createServer(router);
-
+var server = http.createServer(router)
 mongoose.connect('mongodb://jap_user245:conestoga123@ds161021.mlab.com:61021/posts');
 
 router.use(express.static(path.resolve(__dirname, 'client')));

@@ -13,6 +13,7 @@
                     //jQuery provides a nice convenience method for easily sending a post with parameters in JSON
                     //here we pass the ID to the incrLike route on the server side so it can do the incrementing for us
                     //note the return. This MUST be here, or the subsequent then will not wait for this to complete
+                   /* global $ */
                     return $.post('incrLike', {id : id});
                 })
                 .then(function(like){
